@@ -1,26 +1,11 @@
 ## js-injector
 
-This is where you include your WebPart documentation.
-
 ### Building the code
 
 ```bash
 git clone the repo
 npm i
-npm i -g gulp
-gulp
+Then in the HelloWorldApplicationCustomizer.ts file change the <FULL URL TO JAVASCRIPT FILE> part to the full url that points to the JavaScript file. For example :- https://example.sharepoint.com/sites/test/Scripts/JavaScriptExample.js
+Once this is done run gulp bundle --ship, the gulp package-solution --ship.
+Upload the sppkg file to the app catalog, then add the extension to the relevant site.
 ```
-
-This package produces the following:
-
-* lib/* - intermediate-stage commonjs build artifacts
-* dist/* - the bundled script, along with other resources
-* deploy/* - all resources which should be uploaded to a CDN.
-
-### Build options
-
-gulp clean - TODO
-gulp test - TODO
-gulp serve - TODO
-gulp bundle - TODO
-gulp package-solution - TODO
